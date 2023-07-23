@@ -1,6 +1,6 @@
 import './globals.css'
 // import { Inter } from 'next/font/google'
-import { AuthUserProvider } from '../../context/AuthUserContext'
+// import { AuthUserProvider } from '../../context/AuthUserContext'
 // const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: { title: string; description: string } = {
@@ -13,5 +13,5 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }): JSX.Element {
-  return <AuthUserProvider>{children}</AuthUserProvider>
+  return <>{children}</>
 }

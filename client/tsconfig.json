@@ -25,12 +25,12 @@
     }
   },
   "include": [
-    "firebase/useFirebaseAuth.tsx",
+    "firebase/useFirebaseAuth.js",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "firebase/useFirebaseAuth.tsx",
+    "firebase/useFirebaseAuth.js",
     "src/app/profile/logged_in.tsxd_in.tsx"
   ],
   "exclude": ["node_modules"]

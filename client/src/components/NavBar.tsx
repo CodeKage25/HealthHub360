@@ -1,4 +1,4 @@
-export default function NavBar() {
+const NavBar = () => {
   return (
     <div className="bg-white flex">
       <div>CareFinder</div>
@@ -6,3 +6,5 @@ export default function NavBar() {
     </div>
   )
 }
+
+export default NavBar
