@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 import HomePage from '../app/home/page'
-import Button from '../app/design-system/Button/Button'
+import Button from '../design-system/Button/Button'
 
 const Home = () => {
   return (

@@ -1,23 +1,22 @@
-// server.js
-const next = require('next');
+require('dotenv').config();
 const http = require('http');
 const mongoose = require('mongoose');
 const app = require('./app');
 
-const dev = process.env.NODE_ENV !== 'production';
-const nextApp = next({ dev });
-const nextHandle = nextApp.getRequestHandler();
+const PORT_SERVER = process.env.PORT_SERVER || 8000;
+// const PORT_CLIENT = process.env.PORT_CLIENT || 3000; // Change this to your desired client port
 
-const PORT = process.env.PORT || 8000;
-
-const MONGO_URL = 'mongodb+srv://carefinder-api:9gzS1lfzfYS3rTpT@carefindercluster.zwhhgad.mongodb.net/?retryWrites=true&w=majority';
-
+const MONGO_URL = process.env.MONGO_URL;
 mongoose.connection.once('open', () => {
   console.log('MongoDB connection ready!');
 });
 
 mongoose.connection.on('error', (err) => {
   console.error(err);
+});
+
+app.get('/', (req, res) => {
+  return res.send('Failed to log in!');
 });
 
 async function startServer() {
@@ -27,22 +26,26 @@ async function startServer() {
   });
 
   // Express routes and middleware
-//   app.get('/custom-route', (req, res) => {
-//     res.send('This is a custom route in Express!');
-//   });
+  //   app.get('/custom-route', (req, res) => {
+  //     res.send('This is a custom route in Express!');
+  //   });
 
-  // All other requests will be handled by Next.js
-  app.get('*', (req, res) => {
-    return nextHandle(req, res);
-  });
 
   const server = http.createServer(app);
 
-  server.listen(PORT, () => {
-    console.log(`Listening on port ${PORT}...`);
+  server.listen(PORT_SERVER, () => {
+    console.log(`Server listening on port ${PORT_SERVER}...`);
   });
 }
 
-nextApp.prepare().then(() => {
-  startServer();
-});
+startServer();
+
+// Start the Next.js client separately
+// const { exec } = require('child_process');
+// exec('cd ../client && npm run start', (error, stdout, stderr) => {
+//   if (error) {
+//     console.error(`Error starting Next.js client: ${error.message}`);
+//     return;
+//   }
+//   console.log(`Next.js client running on port ${PORT_CLIENT}...`);
+// });

@@ -5,7 +5,7 @@
   "main": "src/server.js",
   "scripts": {
     "test": "jest",
-    "test-watch": "jest --watchAll",
+    "test-watch": "jest",
     "watch": "nodemon src/server.js",
     "start": "NODE_ENV=production node src/server.js -p $PORT",
     "cluster": "pm2 start src/server.js -i max"
