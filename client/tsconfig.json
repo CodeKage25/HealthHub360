@@ -1,11 +1,12 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2017",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
+    "typeRoots": ["node_modules/@types", "node_modules/@next-auth/mongodb-adapter"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
