@@ -41,7 +41,8 @@
     ".next/types/**/*.ts",
     "firebase/useFirebaseAuth.js",
     "src/app/profile/logged_in.tsxd_in.tsx",
-    "build/types/**/*.ts"
+    "build/types/**/*.ts",
+    "typings.d.ts"
   ],
   "exclude": [
     "node_modules"

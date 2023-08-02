@@ -7,7 +7,7 @@
     "test": "jest",
     "test-watch": "jest",
     "watch": "nodemon src/server.js",
-    "start": "NODE_ENV=production node src/server.js -p $PORT",
+    "start": "node src/server.js",
     "cluster": "pm2 start src/server.js -i max"
   },
   "keywords": [],

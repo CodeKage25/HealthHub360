@@ -16,7 +16,7 @@ app.use(express.json());
 app.use('/v1', api)
 
 // Serve the static files from the client folder
-app.use(express.static(path.join(__dirname, '..', 'public')));
+// app.use(express.static(path.join(__dirname, '..', 'public')));
 
 // Set up routes or middleware if needed
 // ...
