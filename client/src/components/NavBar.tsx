@@ -1,9 +1,18 @@
+import Button from '../design-system/Button/Button'
 const NavBar = () => {
   return (
-    <div className="bg-white flex">
-      <div>CareFinder</div>
+    <nav className="bg-white flex">
       <div></div>
-    </div>
+      <div>
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div></div>
+      </div>
+    </nav>
   )
 }
 
