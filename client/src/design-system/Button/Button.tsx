@@ -1,7 +1,7 @@
+'use client'
 type ButtonType = 'button' | 'submit' | 'reset' | undefined
 interface Props {
   children: React.ReactNode
-  onClick?: () => void
   styles: string
   type?: ButtonType
   title: string
@@ -11,7 +11,6 @@ interface Props {
 const Button = (props: Props) => {
   return (
     <button
-      onClick={props?.onClick}
       className={`${props.styles}`}
       type={props?.type}
       title={props.title}

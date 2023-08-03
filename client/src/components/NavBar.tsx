@@ -7,7 +7,7 @@ const NavBar = () => {
         <div className="flex items-center gap-8">
           <div>
             <Button
-              onClick={() => {}}
+              
               styles={'font-satoshi text-ash non-italic font-medium tracking-lesstight hover:text-light-black'}
               type={'button'}
               title={'Home'}
@@ -18,7 +18,7 @@ const NavBar = () => {
           </div>
           <div>
             <Button
-              onClick={() => {}}
+              
               styles={'font-satoshi text-ash non-italic font-medium tracking-lesstight hover:text-light-black'}
               type={'button'}
               title={'About Us'}
@@ -29,7 +29,7 @@ const NavBar = () => {
           </div>
           <div>
             <Button
-              onClick={() => {}}
+              
               styles={' font-satoshi text-ash non-italic font-medium tracking-lesstight hover:text-light-black'}
               type={'button'}
               title={'Explore'}
@@ -40,7 +40,7 @@ const NavBar = () => {
           </div>
           <div>
             <Button
-              onClick={() => {}}
+              
               styles={'font-satoshi text-ash non-italic font-medium tracking-lesstight hover:text-light-black'}
               type={'button'}
               title={'Contact'}
@@ -52,7 +52,7 @@ const NavBar = () => {
         </div>
         <div>
           <Button
-            onClick={() => {}}
+            
             styles={'flex items-center w-[141px] justify-center pt-4 pb-4 font-satoshi text-base font-medium not-italic rounded-lg bg-blue gap-2 tracking-lesstight text-white hover:bg-regal-blue'}
             type={'button'}
             title={'Get Started'}
