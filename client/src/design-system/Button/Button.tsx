@@ -6,11 +6,13 @@ interface Props {
   type?: ButtonType
   title: string
   disabled?: boolean
+  onClick?: () => void
 }
 
 const Button = (props: Props) => {
   return (
     <button
+      onClick={props.onClick}
       className={`${props.styles}`}
       type={props?.type}
       title={props.title}
