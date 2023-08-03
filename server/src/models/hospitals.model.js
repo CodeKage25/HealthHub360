@@ -1,35 +1,51 @@
 const fs = require('fs');
 const path = require('path');
 const { parse } = require('csv-parse');
+const axios = require('axios');
 
 const hospitalDatabase = require('./hospitals.mongo');
 
 
-async function fetchCsvData() {
-  return new Promise((resolve, reject) => {
-    const csvData = [];
-    fs.createReadStream(path.join(__dirname, '..', '..', 'data', 'hospital_data.csv'))
-      .pipe(parse({ columns: true }))
-      .on('data', (data) => {
-        csvData.push(data); // Push each parsed row to the csvData array
-      })
-      .on('error', (err) => {
-        console.error('Error parsing CSV:', err);
-        reject(err);
-      })
-      .on('end', () => {
-        resolve(csvData); // Resolve with the array of parsed data
-      });
-  });
+// async function fetchCsvData() {
+//   return new Promise((resolve, reject) => {
+//     const csvData = [];
+//     fs.createReadStream(path.join(__dirname, '..', '..', 'data', 'hospital_data.csv'))
+//       .pipe(parse({ columns: true }))
+//       .on('data', (data) => {
+//         csvData.push(data); // Push each parsed row to the csvData array
+//       })
+//       .on('error', (err) => {
+//         console.error('Error parsing CSV:', err);
+//         reject(err);
+//       })
+//       .on('end', () => {
+//         resolve(csvData); // Resolve with the array of parsed data
+//       });
+//   });
+// }
+async function fetchJsonData() {
+  try {
+    const url = 'https://api.reliancehmo.com/v3/providers';
+    const response = await axios.get(url);
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching data from api...');
+    throw error
+  }
 }
 
 async function populateHospitals() {
     try {
       console.log('Fetching CSV data...');
-      const csvData = await fetchCsvData();
+      const jsonData = await fetchJsonData();
       console.log('CSV data fetched successfully.');
+
+      if (!Array.isArray(jsonData.data)) {
+        console.error('Error: The fetched data is not in the expected format.');
+        return;
+      }
   
-      const hospitals = csvData.map((item) => {
+      const hospitals = jsonData.data.map((item) => {
         return {
           state: item.State,
           name: item.Name,

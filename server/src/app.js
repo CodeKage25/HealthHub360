@@ -15,6 +15,11 @@ app.use(express.json());
 
 app.use('/v1', api)
 
+app.get('/', (req, res) => {
+  res.send('Hello, this is the root endpoint!');
+});
+
+
 // Serve the static files from the client folder
 // app.use(express.static(path.join(__dirname, '..', 'public')));
 

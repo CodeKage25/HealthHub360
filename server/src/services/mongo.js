@@ -1,7 +1,7 @@
 require('dotenv').config();
 const mongoose = require('mongoose');
 
-const MONGO_URL = process.env.MONGO_URL;
+const MONGO_URL = process.env.MONGO_URL || 'mongodb+srv://carefinder-api:9gzS1lfzfYS3rTpT@carefindercluster.zwhhgad.mongodb.net/?retryWrites=true&w=majority';
 mongoose.connection.once('open', () => {
   console.log('MongoDB connection ready!');
 });
