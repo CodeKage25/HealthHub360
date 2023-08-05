@@ -1,4 +1,4 @@
-'use client'
+'use client';
 type ButtonType = 'button' | 'submit' | 'reset' | undefined
 interface Props {
   children: React.ReactNode
