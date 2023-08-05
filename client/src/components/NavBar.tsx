@@ -4,7 +4,7 @@ import Button from '../design-system/Button/Button'
 const NavBar = () => {
   const [toggle, setToggle] = useState(false);
   return (
-    <nav className="bg-white h-[94px] lg:w-[100%] md:w-[100%] lg:flex sm:flex md:flex sm:w-[100%] justify-between items-center pt-5 pb-5 pr-20 pl-20">
+    <nav className="bg-white h-[94px] lg:w-[100%] md:w-[100%] lg:flex  sm:w-[100%] justify-between items-center pt-5 pb-5 pl-6 md:pl-6 lg:pr-20 lg:pl-20">
       <div className=""><span className="font-satoshi text-2xl non-italic font-bold text-blue tracking-lesstightest">HealthHub</span><span className="font-satoshi text-base non-italic font-bold color-light-black tracking-lessertightest">-360</span></div>
       <section className="MOBILE-MENU lg:hidden">
           <div
