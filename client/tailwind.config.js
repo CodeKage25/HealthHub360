@@ -11,6 +11,7 @@ module.exports = {
         'blue': '#016FEB',
         'regal-blue': '#243c5a',
         'white': '#fff',
+        'lightgray': '#D3D3D3',
         'light-black': '#1E1E1E',
         'ash': '#8A8A8A'
       },
@@ -43,7 +44,7 @@ module.exports = {
         wider: '.05em',
         widest: '.1em',
         widest: '.25em',
-      }
+      },
     },
   },
   plugins: [],
