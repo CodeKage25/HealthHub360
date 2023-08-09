@@ -49,7 +49,8 @@ async function populateHospitals() {
         return {
           state: item.State,
           name: item.Name,
-         location: item.Location
+         location: item.Location,
+         image: item.Image,
         };
       });
   
