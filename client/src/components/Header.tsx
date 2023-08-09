@@ -15,7 +15,7 @@ const Header = () => {
               <br /> Your Perfect Care: Find Your Hospital, Anytime, Anywhere!
             </h3>
           </div>
-          <div className="flex items-center justify-between bg-white rounded-2xl sm:w-[300px] lg:w-[659px] lg:h-[78px] focus:border-sky-500 focus:ring-sky-500">
+          <div className="flex items-center justify-between bg-white rounded-2xl sm:w-[300px] md:w-[400] lg:w-[659px] lg:h-[78px] focus:border-sky-500 focus:ring-sky-500">
             <span className="">
               <img
                 className="pl-6 sm:w-[50px] lg:w-[50px]"
@@ -24,7 +24,7 @@ const Header = () => {
               />
             </span>
             <input
-              className="h-[78px] sm:w-[150px] md:w-[150px] lg:w-[400px] focus:outline-none"
+              className="h-[78px] sm:w-[100px] md:w-[150px] lg:w-[400px] focus:outline-none"
               placeholder="Search Hospital"
             ></input>
             <span className="">
