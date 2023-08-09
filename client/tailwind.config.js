@@ -32,6 +32,8 @@ module.exports = {
         black: '900',
       },
       letterSpacing: {
+        reallytight: '-.1em',
+        tighting: '-.5em',
         tightest: '-.075em',
         lesstightest: '-0.06em',
         lessertightest: '-0.03em',
@@ -45,6 +47,9 @@ module.exports = {
         widest: '.1em',
         widest: '.25em',
       },
+      lineHeight: {
+        '52': '3.25rem',
+      }
     },
   },
   plugins: [],

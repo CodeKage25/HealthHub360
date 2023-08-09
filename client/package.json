@@ -39,6 +39,7 @@
     "yup": "^1.2.0"
   },
   "devDependencies": {
+    "@svgr/webpack": "^8.0.1",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2"
   },
