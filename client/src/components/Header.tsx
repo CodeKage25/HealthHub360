@@ -15,7 +15,7 @@ const Header = () => {
               <br /> Your Perfect Care: Find Your Hospital, Anytime, Anywhere!
             </h3>
           </div>
-          <div className="flex items-center justify-between bg-white rounded-2xl  max-w-[400px] lg:w-[529px] h-[78px] focus:border-sky-500 focus:ring-sky-500">
+          <div className="flex items-center justify-between bg-white rounded-2xl  max-w-[400px] md:max-w-[529px] lg:w-[529px] h-[78px] focus:border-sky-500 focus:ring-sky-500">
             <span className="">
               <img
                 className="pl-6 sm:w-[50px] lg:w-[50px]"
