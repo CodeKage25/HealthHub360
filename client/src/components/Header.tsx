@@ -10,12 +10,12 @@ const Header = () => {
             <h3 className="text-white text-center font-satoshi text-5xl not-italic font-bold leading-52 tracking-wider">
               Get Quick Access to <br /> Hospitals in your Area
             </h3>
-            <h3 className="text-white opacity-80 text-center font-satoshi text-base font-normal leading-5 tracking-wide">
+            <h3 className="text-white opacity-80 text-center font-satoshi sm:text-sm sm:font-light lg:text-base lg:font-normal leading-5 tracking-wide">
               Find the nearest hospital to you and make an appointment. Discover{' '}
               <br /> Your Perfect Care: Find Your Hospital, Anytime, Anywhere!
             </h3>
           </div>
-          <div className="flex items-center justify-between bg-white rounded-2xl sm:w-[300px] md:w-[400] lg:w-[659px] lg:h-[78px] focus:border-sky-500 focus:ring-sky-500">
+          <div className="flex items-center justify-between bg-white rounded-2xl sm:w-[70%] md:w-[70%] w-[100%] lg:h-[78px] focus:border-sky-500 focus:ring-sky-500">
             <span className="">
               <img
                 className="pl-6 sm:w-[50px] lg:w-[50px]"
