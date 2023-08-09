@@ -15,7 +15,7 @@ const Header = () => {
               <br /> Your Perfect Care: Find Your Hospital, Anytime, Anywhere!
             </h3>
           </div>
-          <div className="flex items-center justify-between bg-white rounded-2xl sm:w-[70%] md:w-[70%] w-[100%] lg:h-[78px] focus:border-sky-500 focus:ring-sky-500">
+          <div className="flex items-center justify-between bg-white rounded-2xl  max-w-[400px] lg:w-[529px] h-[78px] focus:border-sky-500 focus:ring-sky-500">
             <span className="">
               <img
                 className="pl-6 sm:w-[50px] lg:w-[50px]"
@@ -24,13 +24,13 @@ const Header = () => {
               />
             </span>
             <input
-              className="h-[78px] sm:w-[100px] md:w-[150px] lg:w-[400px] focus:outline-none"
+              className="h-[78px] max-w-[400px] focus:outline-none"
               placeholder="Search Hospital"
             ></input>
             <span className="">
               <Button
                 styles={
-                  'flex w-[100px] bg-blue justify-center items-center rounded-lg gap-[10px] pt-4 pb-4 pl-5 pr-5 mr-4 text-white font-satoshi non-italic text-base leading-6 font-medium'
+                  'flex  max-w-[100px] bg-blue justify-center items-center rounded-lg gap-[10px] pt-4 pb-4 pl-5 pr-5 pr-4 mr-4 text-white font-satoshi non-italic text-base leading-6 font-medium'
                 }
                 onClick={() => {}}
                 type={'button'}
