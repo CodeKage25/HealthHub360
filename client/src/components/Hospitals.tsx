@@ -1,4 +1,5 @@
 import HospitalsType from '../helpers/hospital';
+import { useMemo } from "react";
 interface HospitalsProps {
     hospitals: HospitalsType[];
   }

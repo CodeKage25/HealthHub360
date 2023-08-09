@@ -7,7 +7,7 @@ import useHospitals from "@/app/api/hooks/useHospitals"
 const HomePage = () => {
   const queryParams = {
     page: 1,
-    limit: 10,
+    limit: 8,
     sortBy: "name",
     order: "asc" as "asc" | "desc" 
   };
