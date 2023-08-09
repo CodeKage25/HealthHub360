@@ -1,8 +1,9 @@
-'use client';
-import Button from '../design-system/Button/Button';
+'use client'
+import Button from '../design-system/Button/Button'
 const Header = () => {
-    return (<>
-    <div className="flex flex-col bg-[url('/images/healthhub.png')] bg-[50%] bg-lightgray bg-cover h-[529px] bg-no-repeat relative">
+  return (
+    <>
+      <div className="flex flex-col bg-[url('/images/healthhub.png')] bg-[50%] bg-lightgray bg-cover h-[529px] bg-no-repeat relative">
         <div className="bg-blue h-[529px] mix-blend-multiply"></div>
         <div className="inline-flex flex-col items-center gap-10 absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
           <div className="flex flex-col items-center gap-4 z-10">
@@ -14,27 +15,36 @@ const Header = () => {
               <br /> Your Perfect Care: Find Your Hospital, Anytime, Anywhere!
             </h3>
           </div>
-          <div className="flex items-center justify-between bg-white rounded-2xl sm:w-[400px] lg:w-[659px] lg:h-[78px] focus:border-sky-500 focus:ring-sky-500">
+          <div className="flex items-center justify-between bg-white rounded-2xl sm:w-[300px] lg:w-[659px] lg:h-[78px] focus:border-sky-500 focus:ring-sky-500">
             <span className="">
-              <img className="pl-6 sm:w-[50px] lg:w-[50px]" src="/icons/mapMarker.svg" alt='mapmarker' />
+              <img
+                className="pl-6 sm:w-[50px] lg:w-[50px]"
+                src="/icons/mapMarker.svg"
+                alt="mapmarker"
+              />
             </span>
-            <input className="h-[78px] sm:w-[150px] md:w-[150px] lg:w-[400px] focus:outline-none"
-              placeholder='Search Hospital'
+            <input
+              className="h-[78px] sm:w-[150px] md:w-[150px] lg:w-[400px] focus:outline-none"
+              placeholder="Search Hospital"
             ></input>
-            <span className=''>
+            <span className="">
               <Button
-                styles={'flex w-[100px] bg-blue justify-center items-center rounded-lg gap-[10px] pt-4 pb-4 pl-5 pr-5 mr-4 text-white font-satoshi non-italic text-base leading-6 font-medium'}
-                onClick={() => { }}
+                styles={
+                  'flex w-[100px] bg-blue justify-center items-center rounded-lg gap-[10px] pt-4 pb-4 pl-5 pr-5 mr-4 text-white font-satoshi non-italic text-base leading-6 font-medium'
+                }
+                onClick={() => {}}
                 type={'button'}
                 title={'Search'}
                 disabled={false}
-
-              >Search</Button>
+              >
+                Search
+              </Button>
             </span>
           </div>
         </div>
       </div>
-        </>)
-};
+    </>
+  )
+}
 
 export default Header
