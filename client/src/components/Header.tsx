@@ -1,6 +1,15 @@
 'use client'
+import React, { useState } from 'react';
 import Button from '../design-system/Button/Button'
-const Header = () => {
+interface HeaderProps {
+    onSearch: (searchQuery: string) => void;
+  }
+const Header: React.FC<HeaderProps> = ({ onSearch }) => {
+    const [searchQuery, setSearchQuery] = useState('');
+
+    const handleSearch = () => {
+        onSearch(searchQuery);
+      };
   return (
     <>
       <div className="flex flex-col bg-[url('/images/healthhub.png')] bg-[50%] bg-lightgray bg-cover h-[529px] bg-no-repeat relative">
@@ -32,7 +41,7 @@ const Header = () => {
                 styles={
                   'flex  max-w-[100px] bg-blue justify-center items-center rounded-lg gap-[10px] pt-4 pb-4 pl-5 pr-5 pr-4 mr-4 text-white font-satoshi non-italic text-base leading-6 font-medium'
                 }
-                onClick={() => {}}
+                onClick={handleSearch}
                 type={'button'}
                 title={'Search'}
                 disabled={false}

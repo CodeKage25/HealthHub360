@@ -16,12 +16,16 @@ const HomePage = () => {
   };
   
   const hospitals = useHospitals(queryParams);
-    console.log(hospitals)
+  console.log(hospitals);
+
+  const handleSearch = (query: string) => {
+    setSearchQuery(query);
+  };
   return (
     <div>
       <NavBar />
-      <Header />
-      <Hospitals hospitals={hospitals} />
+      <Header onSearch={handleSearch} />
+      <Hospitals hospitals={hospitals} searchQuery={searchQuery} />
       <Footer />
     </div>
   )
