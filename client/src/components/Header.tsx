@@ -10,6 +10,12 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
   const handleSearch = () => {
     onSearch(searchQuery)
   }
+
+  const handleKeyPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === 'Enter') {
+      handleSearch()
+    }
+  }
   return (
     <>
       <div className="flex flex-col bg-[url('/images/healthhub.png')] bg-[50%] bg-lightgray bg-cover h-[529px] bg-no-repeat relative">
@@ -36,6 +42,7 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
               className="h-[78px] max-w-[400px] focus:outline-none"
               placeholder="Search Hospital"
               onChange={(e) => setSearchQuery(e.target.value)}
+              onKeyPress={handleKeyPress}
             ></input>
             <span className="">
               <Button
