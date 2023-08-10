@@ -78,10 +78,16 @@ async function loadHospitals() {
 }
 
 
-async function getAllHospitals(skip, limit, sortBy) {
+async function getAllHospitals(skip, limit, sortBy, search) {
     try {
         console.log('Loading all hospital...');
         let query = hospitalDatabase.find({}, { '_id': 0, '__v': 0 });
+
+        if (search) {
+          // Add the search query to the query object
+          query = query.find({ $text: { $search: search } });
+        }
+    
 
         // If sortBy parameter is provided, apply sorting
         if (sortBy) {

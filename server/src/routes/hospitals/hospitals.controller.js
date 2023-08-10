@@ -9,8 +9,8 @@ const {
 async function httpgetAllHospitals(req, res) {
     try {
         console.log('Fetching all hospitals...')
-        const { skip, limit } = getPagination(req.query)
-        const hospitals = await getAllHospitals(skip, limit);
+        const { skip, limit, search } = getPagination(req.query)
+        const hospitals = await getAllHospitals(skip, limit, undefined, search);
         console.log('Hospital data loaded successfully.');
         res.status(200).json(hospitals)
     } catch (error) {

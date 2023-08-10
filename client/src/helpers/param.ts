@@ -3,6 +3,7 @@ interface QueryParamsType {
     limit?: number;
     sortBy?: string;
     order?: "asc" | "desc";
+    search?: string;
   }
 
 export default QueryParamsType

@@ -1,5 +1,5 @@
 import axios from 'axios';
-const API_URL = 'http://localhost:8000/v1';
+const API_URL = 'https://nodejs-production-0677.up.railway.app/v1';
 
 import QueryParamsType from '../../../helpers/param'
 

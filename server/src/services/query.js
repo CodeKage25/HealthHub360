@@ -8,12 +8,14 @@ function getPagination(query) {
 // Get the sort field and order from query
 const sortBy = query.sortBy || null; // Field to sort by
 // Example usage in frontend: sortBy=name&order=asc
-const order = query.order === 'desc' ? -1 : 1; // Sorting order (asc or desc)
+    const order = query.order === 'desc' ? -1 : 1; // Sorting order (asc or desc)
+    const search = query.search || null;
 
 return {
     skip,
     limit,
     sortBy: sortBy ? { [sortBy]: order } : null, // Returning null if sortBy is not provided
+    search, // Include the search parameter
 };
     
 }
