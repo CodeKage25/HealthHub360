@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react'
-import Button from '../design-system/Button/Button'
+import Button from '../../design-system/Button/Button'
 interface HeaderProps {
   onSearch: (searchQuery: string) => void
 }

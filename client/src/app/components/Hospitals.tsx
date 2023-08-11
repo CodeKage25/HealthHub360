@@ -1,7 +1,7 @@
-import HospitalsType from '../helpers/hospital'
+import HospitalsType from '../../helpers/hospital'
 import { useMemo } from 'react'
 import { ThreeDots } from 'react-loader-spinner'
-import Button from '../design-system/Button/Button'
+import Button from '../../design-system/Button/Button'
 interface HospitalsProps {
   hospitals: HospitalsType[]
   searchQuery: string

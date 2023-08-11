@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import Button from '../design-system/Button/Button'
+import Button from '../../design-system/Button/Button'
 const NavBar = () => {
   const [toggle, setToggle] = useState(false)
   return (
