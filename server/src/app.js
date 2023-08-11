@@ -7,7 +7,7 @@ const api = require('./routes/api')
 const app = express();
 
 app.use(cors({
-  origin: '*', // Allow requests from any origin
+  origin: ['http://localhost:3000', 'https://health-hub360.vercel.app'],
 }));
 
 app.use(morgan('combined'));
