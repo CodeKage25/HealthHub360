@@ -15,8 +15,7 @@ const Hospitals: React.FC<HospitalsProps> = ({
   const filteredHospitals = useMemo(() => {
     return hospitals.filter(
       (hospital) =>
-        hospital.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        hospital.location.toLowerCase().includes(searchQuery.toLowerCase())
+        hospital.name.toLowerCase().includes(searchQuery.toLowerCase())
     )
   }, [hospitals, searchQuery])
 
