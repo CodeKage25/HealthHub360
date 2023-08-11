@@ -68,7 +68,7 @@ const Hospitals: React.FC<HospitalsProps> = ({
         </div>
       ) : (
         // Render hospitalBody when not loading
-        <div className="grid grid-cols-4 grid-rows-2 gap-[16px] pr-6 pl-6">
+        <div className="grid max-sm:grid-cols-1 max-sm:grid-rows-8 max-md:grid-cols-2 max-md:grid-rows-4 grid-cols-4 grid-rows-2 gap-[16px] pr-6 pl-6">
           {hospitalBody}
         </div>
       )}
