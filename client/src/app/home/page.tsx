@@ -4,7 +4,7 @@ import NavBar from '../components/NavBar'
 import Header from '../components/Header'
 import Hospitals from '../components/Hospitals'
 import Footer from '../components/Footer'
-import useHospitals from "@/app/api/hooks/useHospitals"
+import useHospitals from "@/api/hooks/useHospitals"
 const HomePage = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [isLoading, setIsLoading] = useState(true);

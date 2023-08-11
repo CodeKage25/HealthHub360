@@ -2,9 +2,9 @@ import { useCallback, useEffect, useState } from "react";
 import {
     httpGetHospitals
 } from "./requests";
-import QueryParamsType from '../../../helpers/param';
-import HospitalsType from '../../../helpers/hospital';
-import randomImages from '../../../helpers/randomImages';
+import QueryParamsType from '../../helpers/param';
+import HospitalsType from '../../helpers/hospital';
+import randomImages from '../../helpers/randomImages';
 
 function useHospitals(queryParams: QueryParamsType) {
     const [hospitals, saveHospitals] = useState([]);
