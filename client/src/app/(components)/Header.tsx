@@ -12,15 +12,10 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
     setSearchQuery(''); 
   }
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const query = event.target.value;
-    setSearchQuery(query);
-    if (query === '') {
-      onSearch(''); // Call onSearch with an empty query to reset
-    } else {
-      onSearch(query);
-    }
-  }
+  // const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  //   setSearchQuery(event.target.value)
+  //   onSearch(event.target.value) // Call onSearch as you type
+  // }
 
 
   const handleKeyPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
@@ -53,7 +48,7 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
             <input
               className="h-[78px] max-w-[400px] focus:outline-none"
               placeholder="Search Hospital"
-              onChange={handleChange}
+              onChange={(e) => setSearchQuery(e.target.value)}
               onKeyPress={handleKeyPress}
             ></input>
             <span className="">
