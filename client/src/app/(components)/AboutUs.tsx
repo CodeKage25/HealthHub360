@@ -12,7 +12,7 @@ const AboutUs = () => {
             <br /> the best health care services
           </h3>
           <div className="flex flex-col max-md:items-center items-start gap-[16px]">
-            <p className="text-lightash max-sm:text-sm text-base leading-4 font-normal font-satoshi non-italic lg:pl-24">
+            <p className="text-lightash max-sm:text-center max-sm:text-sm text-base leading-4 font-normal font-satoshi non-italic lg:pl-24">
               Healthhub360 is a platform where users can search for hosiptals in
               their areas,
               <br /> export hospital details for your records and enhance your
