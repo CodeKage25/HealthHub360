@@ -13,7 +13,8 @@ module.exports = {
         'white': '#fff',
         'lightgray': '#D3D3D3',
         'light-black': '#1E1E1E',
-        'ash': '#8A8A8A'
+        'ash': '#8A8A8A',
+        'lightash': '#6E6E6E',
       },
       fontFamily: {
         'satoshi': 'Satoshi Variable',
