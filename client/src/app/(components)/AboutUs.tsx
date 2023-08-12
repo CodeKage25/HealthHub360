@@ -3,11 +3,11 @@ const AboutUs = () => {
   return (
     <div className="pt-24 w-[100%] inline-flex flex-col items-center gap-[60px]">
       <div className="flex flex-col max-md:items-center items-start gap-[8px]">
-        <h5 className="text-blue font-satoshi max-sm:text-xs text-sm non-italic font-medium leading-5 lg:pr-24">
+        <h5 className="text-blue font-satoshi text-sm non-italic font-medium leading-5 lg:pr-24">
           ABOUT US
         </h5>
         <div className="flex max-md:flex-col max-md:gap-[30px] max-md:items-center items-start gap-[150px]">
-          <h3 className="text-light-black font-satoshi non-italic max-sm:text-base text-[32px] leading-8 font-bold lg:pr-24">
+          <h3 className="text-light-black font-satoshi non-italic max-sm:text-lg text-[32px] leading-8 font-bold lg:pr-24">
             We aim to provide easy access to
             <br /> the best health care services
           </h3>
