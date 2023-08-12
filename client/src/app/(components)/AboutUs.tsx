@@ -22,7 +22,7 @@ const AboutUs = () => {
             <div className="flex justify-center items-center">
               <Button
                 styles={
-                  'font-satoshi text-blue max-sm:text-sm text-base leading-4 non-italic font-medium lg:pl-24 hover:bg-light-black'
+                  'font-satoshi text-blue max-sm:text-sm text-base leading-4 non-italic font-medium lg:pl-24'
                 }
                 onClick={() => {}}
                 type={'button'}
