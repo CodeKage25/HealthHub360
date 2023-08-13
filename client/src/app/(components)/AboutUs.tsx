@@ -1,7 +1,7 @@
 import Button from '../../design-system/Button/Button'
 const AboutUs = () => {
   return (
-    <div className="max-md:pt-16 pt-24 w-[100%] inline-flex flex-col items-center gap-[60px]">
+    <div className="max-md:pt-16 pt-24 pb-16 w-[100%] inline-flex flex-col items-center gap-[60px]">
       <div className="flex flex-col max-md:items-center items-start gap-[8px]">
         <h5 className="text-blue font-satoshi text-sm non-italic font-medium leading-5 lg:pr-24">
           ABOUT US

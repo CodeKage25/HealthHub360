@@ -4,6 +4,7 @@ import NavBar from './(components)/NavBar'
 import Header from './(components)/Header'
 import Hospitals from './(components)/Hospitals'
 import AboutUs from './(components)/AboutUs'
+import Features from './(components)/Features'
 import Footer from './(components)/Footer'
 import useHospitals from "@/api/hooks/useHospitals"
 
@@ -35,6 +36,7 @@ const Layout = () => {
       <Header onSearch={handleSearch} />
       <Hospitals hospitals={hospitals} searchQuery={searchQuery} isLoading={isLoading} />
       <AboutUs />
+      <Features />
       <Footer />
     </div>
   )
