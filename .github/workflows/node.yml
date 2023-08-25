@@ -8,7 +8,7 @@ jobs:
   build:
     env:
       CI: true
-      MONGO_URL: mongodb://localhost/shopcart
+      MONGO_URL: mongodb://localhost/healthhub360
     strategy:
        matrix:
           node-version: [18.x]
