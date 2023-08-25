@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react'
-import Button from '../../design-system/Button/Button'
+import Button from '../design-system/Button/Button'
 interface HeaderProps {
   onSearch: (searchQuery: string) => void
 }
@@ -54,7 +54,7 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
             <span className="">
               <Button
                 styles={
-                  'flex  max-w-[100px] bg-blue justify-center items-center rounded-lg gap-[10px] pt-4 pb-4 pl-5 pr-5 pr-4 mr-4 text-white font-satoshi non-italic text-base leading-6 font-medium'
+                  'flex  max-w-[100px] bg-blue justify-center items-center rounded-lg gap-[10px] pt-4 pb-4 pl-5 pr-5 pr-4 mr-4 text-white font-satoshi not-italic text-base leading-6 font-medium'
                 }
                 onClick={handleSearch}
                 type={'button'}

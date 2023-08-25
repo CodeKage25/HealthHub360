@@ -7,3 +7,5 @@ interface QueryParamsType {
   }
 
 export default QueryParamsType
+
+

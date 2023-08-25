@@ -1,11 +1,12 @@
 'use client'
 import { useState, useEffect } from 'react';
-import NavBar from './(components)/NavBar'
-import Header from './(components)/Header'
-import Hospitals from './(components)/Hospitals'
-import AboutUs from './(components)/AboutUs'
-import Features from './(components)/Features'
-import Footer from './(components)/Footer'
+import NavBar from '../components/NavBar'
+import Header from '../components/Header'
+import Hospitals from '../components/Hospitals'
+import AboutUs from '../components/AboutUs'
+import Features from '../components/Features'
+// import Reviews from '../components/Reviews'
+import Footer from '../components/Footer'
 import useHospitals from "@/api/hooks/useHospitals"
 
 const Layout = () => {
@@ -37,6 +38,7 @@ const Layout = () => {
       <Hospitals hospitals={hospitals} searchQuery={searchQuery} isLoading={isLoading} />
       <AboutUs />
       <Features />
+      {/* <Reviews /> */}
       <Footer />
     </div>
   )

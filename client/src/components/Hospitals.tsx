@@ -1,7 +1,7 @@
-import HospitalsType from '../../helpers/hospital'
+import HospitalsType from '../helpers/hospital'
 import { useMemo } from 'react'
 import { ThreeDots } from 'react-loader-spinner'
-import Button from '../../design-system/Button/Button'
+import Button from '../design-system/Button/Button'
 interface HospitalsProps {
   hospitals: HospitalsType[]
   searchQuery: string
@@ -31,7 +31,7 @@ const Hospitals: React.FC<HospitalsProps> = ({
         </div>
         <div className="flex flex-col items-start gap-3 pl-2">
           <div className="flex flex-col items-start gap-1">
-            <div className="text-light-black font-satoshi text-xl non-italic leading-7 font-medium">
+            <div className="text-light-black font-satoshi text-xl not-italic leading-7 font-medium">
               {hospital.name}
             </div>
             <div className="text-ash font-satoshi text-base leading-6 font-normal">
@@ -40,7 +40,7 @@ const Hospitals: React.FC<HospitalsProps> = ({
           </div>
           <div>
             &#11088;{' '}
-            <span className="text-light-black font-satoshi text-base leading-6 non-italic font-medium">
+            <span className="text-light-black font-satoshi text-base leading-6 not-italic font-medium">
               4.5
             </span>
           </div>
@@ -50,7 +50,7 @@ const Hospitals: React.FC<HospitalsProps> = ({
   }, [filteredHospitals])
   return (
     <div className="inline-flex flex-col items-center w-[100%] pt-20 gap-[32px]">
-      <h3 className="text-light-black font-satoshi text-[32px] non-italic font-bold leading-8 pb-6">
+      <h3 className="text-light-black font-satoshi text-[32px] not-italic font-bold leading-8 pb-6">
         Hospitals near you
       </h3>
       {/* Show loader while isLoading is true */}
@@ -75,7 +75,7 @@ const Hospitals: React.FC<HospitalsProps> = ({
       <div>
         <Button
           styles={
-            'rounded-lg bg-blue w-[150px] flex justify-center items-center h-[54px] text-white font-satoshi non-italic text-base leading-6 font-medium hover:bg-light-black'
+            'rounded-lg bg-blue w-[150px] flex justify-center items-center h-[54px] text-white font-satoshi not-italic text-base leading-6 font-medium hover:bg-light-black'
           }
           onClick={() => {}}
           type={'button'}

@@ -1,15 +1,15 @@
 'use client'
 import { useState } from 'react'
-import Button from '../../design-system/Button/Button'
+import Button from '../design-system/Button/Button'
 const NavBar = () => {
   const [toggle, setToggle] = useState(false)
   return (
     <nav className="bg-white h-[94px] lg:w-[100%] md:w-[100%] lg:flex  sm:w-[100%] justify-between items-center pt-6 lg:pt-5 lg:pb-5 pl-6 md:pl-6 lg:pr-20 lg:pl-20">
       <div className="">
-        <span className="font-satoshi text-2xl non-italic font-bold text-blue tracking-lesstightest">
+        <span className="font-satoshi text-2xl not-italic font-bold text-blue tracking-lesstightest">
           HealthHub
         </span>
-        <span className="font-satoshi text-base non-italic font-bold color-light-black tracking-lessertightest">
+        <span className="font-satoshi text-base not-italic font-bold color-light-black tracking-lessertightest">
           -360
         </span>
       </div>
@@ -47,7 +47,7 @@ const NavBar = () => {
                 <Button
                   onClick={() => {}}
                   styles={
-                    'font-satoshi text-ash non-italic font-medium tracking-lesstight hover:text-light-black'
+                    'font-satoshi text-ash not-italic font-medium tracking-lesstight hover:text-light-black'
                   }
                   type={'button'}
                   title={'Home'}
@@ -60,7 +60,7 @@ const NavBar = () => {
                 <Button
                   onClick={() => {}}
                   styles={
-                    'font-satoshi text-ash non-italic font-medium tracking-lesstight hover:text-light-black'
+                    'font-satoshi text-ash not-italic font-medium tracking-lesstight hover:text-light-black'
                   }
                   type={'button'}
                   title={'About Us'}
@@ -73,7 +73,7 @@ const NavBar = () => {
                 <Button
                   onClick={() => {}}
                   styles={
-                    ' font-satoshi text-ash non-italic font-medium tracking-lesstight hover:text-light-black'
+                    ' font-satoshi text-ash not-italic font-medium tracking-lesstight hover:text-light-black'
                   }
                   type={'button'}
                   title={'Explore'}
@@ -86,7 +86,7 @@ const NavBar = () => {
                 <Button
                   onClick={() => {}}
                   styles={
-                    'font-satoshi text-ash non-italic font-medium tracking-lesstight hover:text-light-black'
+                    'font-satoshi text-ash not-italic font-medium tracking-lesstight hover:text-light-black'
                   }
                   type={'button'}
                   title={'Contact'}
@@ -119,7 +119,7 @@ const NavBar = () => {
             <Button
               onClick={() => {}}
               styles={
-                'font-satoshi text-ash non-italic font-medium tracking-lesstight hover:text-light-black'
+                'font-satoshi text-ash not-italic font-medium tracking-lesstight hover:text-light-black'
               }
               type={'button'}
               title={'Home'}
@@ -132,7 +132,7 @@ const NavBar = () => {
             <Button
               onClick={() => {}}
               styles={
-                'font-satoshi text-ash non-italic font-medium tracking-lesstight hover:text-light-black'
+                'font-satoshi text-ash not-italic font-medium tracking-lesstight hover:text-light-black'
               }
               type={'button'}
               title={'About Us'}
@@ -145,7 +145,7 @@ const NavBar = () => {
             <Button
               onClick={() => {}}
               styles={
-                ' font-satoshi text-ash non-italic font-medium tracking-lesstight hover:text-light-black'
+                ' font-satoshi text-ash not-italic font-medium tracking-lesstight hover:text-light-black'
               }
               type={'button'}
               title={'Explore'}
@@ -158,7 +158,7 @@ const NavBar = () => {
             <Button
               onClick={() => {}}
               styles={
-                'font-satoshi text-ash non-italic font-medium tracking-lesstight hover:text-light-black'
+                'font-satoshi text-ash not-italic font-medium tracking-lesstight hover:text-light-black'
               }
               type={'button'}
               title={'Contact'}
